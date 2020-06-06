@@ -1,6 +1,7 @@
 :root {
   --title-color: #322153;
   --primary-color: #34cb79;
+  --input-color: #f0f0f5;
 }
 
 * {
@@ -14,7 +15,7 @@ html {
 }
 
 body {
-  background-color: #f0f0f5;
+  background-color: var(--input-color);
   -webkit-font-smoothing: antialiased;
 }
 

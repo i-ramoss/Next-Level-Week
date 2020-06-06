@@ -54,6 +54,7 @@ form .field {
   flex: 1;
   margin-bottom: 24px;
 }
+
 form .field-group {
   display: flex;
 }
@@ -63,7 +64,7 @@ form .field-group .field + .field {
 
 form input,
 form select {
-  background-color: #f0f0f5;
+  background-color: var(--input-color);
   border: 0;
   padding: 16px 24px;
   font-size: 16px;
@@ -94,4 +95,44 @@ form button {
 }
 form button:hover {
   background-color: #2fb86e;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.items-grid li {
+  background-color: #e1faec;
+  list-style: none;
+  height: 180px;
+  border: 2px solid #e1faec;
+  border-radius: 8px;
+  padding: 32px 24px 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+  cursor: pointer;
+}
+.items-grid li span {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  color: var(--title-color);
+}
+
+.items-grid li.selected {
+  background-color: rgb(245, 132, 67);
+  border: 2px solid rgb(255, 94, 0);
+}
+
+.items-grid li img,
+.items-grid li span {
+  pointer-events: none; /* ignora eventos de pointer */
 }
