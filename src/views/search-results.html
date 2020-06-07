@@ -1,30 +1,20 @@
-<!DOCTYPE html>
-<html lang="pt_br">
+{% extends "layout.html" %}
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% set pageId = "page-search-results" %}
+
+
+{% block title %}
     <title>Resultado da pesquisa</title>
+{% endblock title %}
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/main.css">
+{% block styles %}
     <link rel="stylesheet" href="styles/search-results.css">
+{% endblock styles %}
 
-    <link rel="stylesheet" href="styles/responsive.css">
-  </head>
 
-  <body>
-
-    <div id="page-search-results">
-
-      <header>
-          <img src="/assets/logo.svg" alt="Logo-Ecoleta">
-          <a href="index.html">
-            <span></span>
-            Voltar para home
-          </a>
-      </header>
+{% block content %}
+  {% include "partials/page-header.html" %}
 
       <main>
         <h4>
@@ -57,10 +47,5 @@
 
         </div>
 
-      </main>
-
-    </div>
-
-  </body>
-    
-</html>
+      </main>      
+{% endblock content %}
