@@ -69,6 +69,8 @@ function handleSelectedItem(event) {
 
   // guards o id de um item, de um tipo reciclável
   const itemId = itemLi.dataset.id
+
+  console.log("ITEM ID:", itemId)
   
   //verificar se existemítens selecionados, se sim, pegar os ítens selecionados
   const alreadySelected = selectedItems.findIndex( item => {
@@ -91,6 +93,10 @@ function handleSelectedItem(event) {
   // se não, adicionar à seleção
   else 
     selectedItems.push(itemId)
+
+    
+  console.log("Selected ITEM:", selectedItems)
+  
 
   // atualizar o campo escondido com os items selecionados
   collectedItems.value = selectedItems
