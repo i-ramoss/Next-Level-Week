@@ -77,7 +77,7 @@ $ cd Next-Level-Week
 # Instale as dependências:
 $ npm install
 
-# Inicie o servidor
+# Inicie o servidor:
 $ nodemon
 
 # A aplicação estará rodando na porta 3000 (http://localhost:3000/)
@@ -94,7 +94,7 @@ Depois que a sua solicitação for aceita e adicionada ao projeto, você pode ex
 
 ## :key: Licença:
 
-Este projeto está sob licença MIT, para mais detales verifique em [LICENSE][license].
+Este projeto está sob licença MIT, para mais detalhes verifique em [LICENSE][license].
 
 Feito por **Ian Ramos** :fire: [Entre em contato!](https://www.linkedin.com/in/ian-ramos/)
 
